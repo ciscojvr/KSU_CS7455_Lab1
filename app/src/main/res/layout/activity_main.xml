@@ -15,15 +15,24 @@
         android:textColor="#AAEDF4"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="6dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageViewEarth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/earth"
-        tools:layout_editor_absoluteY="56dp" />
+        android:layout_width="390dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="39dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextMajor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/earth" />
 
     <View
         android:id="@+id/viewContainer"
@@ -40,21 +49,30 @@
         android:id="@+id/textViewMajor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
         android:text="Major:"
         android:textColor="#AC864E"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="411dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewContainer" />
 
     <TextView
         android:id="@+id/textViewFavoriteCourse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="5dp"
         android:text="Favorite Course:"
         android:textColor="#AC864E"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="464dp" />
+        app:layout_constraintBottom_toTopOf="@+id/buttonToClick"
+        app:layout_constraintEnd_toStartOf="@+id/editTextFavoriteCourse"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextMajor"
@@ -62,40 +80,61 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:layout_marginBottom="28dp"
+        android:background="@android:color/transparent"
         android:ems="10"
+        android:hint="Enter Your Major"
         android:inputType="textPersonName"
-        android:text="Enter Your Major"
         android:textColor="#AC864E"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="398dp" />
+        android:textColorHint="#AC864E"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFavoriteCourse"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/editTextFavoriteCourse"
-        android:layout_width="216dp"
+        android:layout_width="0dp"
         android:layout_height="41dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="57dp"
+        android:background="@android:color/transparent"
         android:ems="10"
+        android:hint="Enter Your Favorite Course"
         android:inputType="textPersonName"
-        android:text="Enter Your Favorite Course"
         android:textColor="#AC864E"
-        android:textSize="17sp"
-        tools:layout_editor_absoluteX="189dp"
-        tools:layout_editor_absoluteY="455dp" />
+        android:textColorHint="#AC864E"
+        app:layout_constraintBottom_toBottomOf="@+id/viewContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewFavoriteCourse"
+        app:layout_constraintTop_toTopOf="@+id/editTextMajor"
+        app:layout_constraintVertical_bias="0.761" />
 
     <Button
-        android:id="@+id/clickThisButton"
+        android:id="@+id/buttonToClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="onButtonClick"
         android:text="Click This Button"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="501dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/viewContainer"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textViewPostClick"
+        android:id="@+id/textViewAfterSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginRight="159dp"
+        android:layout_marginBottom="11dp"
         android:textColor="#3746BF"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="251dp"
-        tools:layout_editor_absoluteY="510dp" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewContainer"
+        app:layout_constraintEnd_toEndOf="@+id/viewContainer"
+        app:layout_constraintStart_toStartOf="@+id/editTextFavoriteCourse" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
