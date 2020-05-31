@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#BAB370"
-        android:text="Francisco O. Public"
+        android:text="@string/francisco_o_public"
         android:textColor="#AAEDF4"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,11 +27,13 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="41dp"
         android:layout_marginBottom="39dp"
+        android:contentDescription="@string/earth_image_view"
         app:layout_constraintBottom_toBottomOf="@+id/editTextMajor"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/earth" />
 
     <View
@@ -52,7 +54,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="7dp"
-        android:text="Major:"
+        android:text="@string/major"
         android:textColor="#AC864E"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,7 +69,7 @@
         android:layout_marginEnd="11dp"
         android:layout_marginRight="11dp"
         android:layout_marginBottom="5dp"
-        android:text="Favorite Course:"
+        android:text="@string/favorite_course"
         android:textColor="#AC864E"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonToClick"
@@ -83,12 +85,13 @@
         android:layout_marginBottom="28dp"
         android:background="@android:color/transparent"
         android:ems="10"
-        android:hint="Enter Your Major"
+        android:hint="@string/enter_your_major"
         android:inputType="textPersonName"
         android:textColor="#AC864E"
         android:textColorHint="#AC864E"
         app:layout_constraintBottom_toTopOf="@+id/textViewFavoriteCourse"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextFavoriteCourse"
@@ -100,7 +103,7 @@
         android:layout_marginBottom="57dp"
         android:background="@android:color/transparent"
         android:ems="10"
-        android:hint="Enter Your Favorite Course"
+        android:hint="@string/enter_your_favorite_course"
         android:inputType="textPersonName"
         android:textColor="#AC864E"
         android:textColorHint="#AC864E"
@@ -108,7 +111,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewFavoriteCourse"
         app:layout_constraintTop_toTopOf="@+id/editTextMajor"
-        app:layout_constraintVertical_bias="0.761" />
+        app:layout_constraintVertical_bias="0.761"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/buttonToClick"
@@ -118,7 +122,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="4dp"
         android:onClick="onButtonClick"
-        android:text="Click This Button"
+        android:text="@string/click_this_button"
         app:layout_constraintBottom_toBottomOf="@+id/viewContainer"
         app:layout_constraintStart_toStartOf="parent" />
 
