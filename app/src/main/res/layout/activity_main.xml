@@ -7,29 +7,26 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#BAB370"
         android:text="Francisco O. Public"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#AAEDF4"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        tools:layout_editor_absoluteY="6dp" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewEarth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/earth"
         tools:layout_editor_absoluteY="56dp" />
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/viewContainer"
         android:layout_width="410dp"
         android:layout_height="149dp"
         android:layout_marginTop="404dp"
@@ -38,5 +35,67 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Major:"
+        android:textColor="#AC864E"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="411dp" />
+
+    <TextView
+        android:id="@+id/textViewFavoriteCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite Course:"
+        android:textColor="#AC864E"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="464dp" />
+
+    <EditText
+        android:id="@+id/editTextMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Your Major"
+        android:textColor="#AC864E"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <EditText
+        android:id="@+id/editTextFavoriteCourse"
+        android:layout_width="216dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Your Favorite Course"
+        android:textColor="#AC864E"
+        android:textSize="17sp"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="455dp" />
+
+    <Button
+        android:id="@+id/clickThisButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click This Button"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="501dp" />
+
+    <TextView
+        android:id="@+id/textViewPostClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3746BF"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="251dp"
+        tools:layout_editor_absoluteY="510dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
