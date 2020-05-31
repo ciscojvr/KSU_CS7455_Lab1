@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Lab1</string>
+    <string name="francisco_o_public">Francisco O. Public</string>
+    <string name="major">Major:</string>
+    <string name="favorite_course">Favorite Course:</string>
+    <string name="click_this_button">Click This Button</string>
+    <string name="enter_your_favorite_course">Enter Your Favorite Course</string>
+    <string name="enter_your_major">Enter Your Major</string>
+    <string name="earth_image_view">Earth Image View</string>
 </resources>

@@ -7,12 +7,138 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:background="#BAB370"
+        android:text="@string/francisco_o_public"
+        android:textColor="#AAEDF4"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewEarth"
+        android:layout_width="390dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="39dp"
+        android:contentDescription="@string/earth_image_view"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextMajor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/earth" />
+
+    <View
+        android:id="@+id/viewContainer"
+        android:layout_width="410dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="404dp"
+        android:background="#D0F881"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/major"
+        android:textColor="#AC864E"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewContainer" />
+
+    <TextView
+        android:id="@+id/textViewFavoriteCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/favorite_course"
+        android:textColor="#AC864E"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonToClick"
+        app:layout_constraintEnd_toStartOf="@+id/editTextFavoriteCourse"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="28dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="@string/enter_your_major"
+        android:inputType="textPersonName"
+        android:textColor="#AC864E"
+        android:textColorHint="#AC864E"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFavoriteCourse"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextFavoriteCourse"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="57dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="@string/enter_your_favorite_course"
+        android:inputType="textPersonName"
+        android:textColor="#AC864E"
+        android:textColorHint="#AC864E"
+        app:layout_constraintBottom_toBottomOf="@+id/viewContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewFavoriteCourse"
+        app:layout_constraintTop_toTopOf="@+id/editTextMajor"
+        app:layout_constraintVertical_bias="0.761"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/buttonToClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="onButtonClick"
+        android:text="@string/click_this_button"
+        app:layout_constraintBottom_toBottomOf="@+id/viewContainer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAfterSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginRight="159dp"
+        android:layout_marginBottom="11dp"
+        android:textColor="#3746BF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewContainer"
+        app:layout_constraintEnd_toEndOf="@+id/viewContainer"
+        app:layout_constraintStart_toStartOf="@+id/editTextFavoriteCourse" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
